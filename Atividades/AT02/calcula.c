@@ -6,7 +6,7 @@ float n1, n2, r1;
 int X;
 int L=1;
     
-while (L != 0){
+while (L !=0){
 		
 	printf("Insira 0 - Sair, 1 - Somar, 2 - Subtrair, 3 - Multiplicar, 4 - Dividir.\n");
     scanf("%d", &X);
