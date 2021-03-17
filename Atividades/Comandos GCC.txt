@@ -1,8 +1,0 @@
-gcc -o NomeDoExecutável HelloWorld!.c
-
-NomeDoExecutável
-
-
-Mudar diretório no prompt de comando:
-cd /d e:\
-
