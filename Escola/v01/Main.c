@@ -36,7 +36,6 @@ typedef struct{
 void addAluno(aluno alunosCadastrados[], aluno novoAluno, int *nextMatAluno){
 	
 	int marcador = *nextMatAluno;
-	
 	alunosCadastrados[marcador].matricula = 1 + marcador;
     alunosCadastrados[marcador].status = 1; 
 	strcpy(alunosCadastrados[marcador].CPF, novoAluno.CPF);
