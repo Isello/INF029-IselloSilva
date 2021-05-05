@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-
 char velha[3][3];
 char p1[30], p2[30];
 
@@ -193,7 +191,7 @@ void executa() {
         else
             printf("\nO ganhador foi: %s", p2);
     } else
-        printf("\nNinguém ganhou.\n");
+        printf("\nNinguï¿½m ganhou.\n");
 }
 
 int main() {
