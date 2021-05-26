@@ -247,15 +247,39 @@ Rertono (int)
     POSICAO_INVALIDA - Posição inválida para estrutura auxiliar
 */
 int getDadosOrdenadosEstruturaAuxiliar(int posicao, int vetorAux[]){
+	
 	if(posicao<1 || posicao>10){
 		return POSICAO_INVALIDA;}
     
     else if (estruturaPrincipal[posicao]==NULL){
         return SEM_ESTRUTURA_AUXILIAR;}
-	//
+     
+	int i;
+	int j=0; 
+	int x=0;
+	
+	for( i=0; estruturaPrincipal[posicao][i] != NULL; i++){
+		x++;} 
+	
+	x=x-1;
 
+    for(i = 1; j < x; i++){
+        vetorAux[j] = *(estruturaPrincipal[posicao][i]);
+        j++;}
+
+    int aux;
+    
+    for(i=0; i<x; i++){
+    	for(j=i+1; j<x; j++){
+    		if(vetorAux[i]>vetorAux[j]){
+    			aux=vetorAux[i];
+    			vetorAux[i]=vetorAux[j];
+    			vetorAux[j]=aux;
+			}
+		}
+	}
+    return SUCESSO;
 }
-
 
 /*
 Objetivo: retorna os números de todas as estruturas auxiliares.
@@ -266,6 +290,8 @@ Rertono (int)
     SEM_ESTRUTURA_AUXILIAR - Não tem estrutura auxiliar
 */
 int getDadosDeTodasEstruturasAuxiliares(int vetorAux[]){
+	
+
 
 }
 
