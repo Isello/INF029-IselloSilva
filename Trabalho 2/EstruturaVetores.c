@@ -289,24 +289,31 @@ Rertono (int)
     SUCESSO - recuperado com sucesso os valores da estrutura na posiÃ§Ã£o 'posicao'
     SEM_ESTRUTURA_AUXILIAR - NÃ£o tem estrutura auxiliar
 */
-int getDadosDeTodasEstruturasAuxiliares(int vetorAux[]){
-	
-
-
+int getDadosDeTodasEstruturasAuxiliares(int vetorAux[])
+{
+	int tamVetor = 2;
+    int j = 0;
+    for (int i = 1; j < tamVetor && i <= TAM; i += 1) {
+        if (estruturaPrincipal[i]) {
+            for (int k = 1; j < tamVetor && k <= *(estruturaPrincipal[i][0]) && estruturaPrincipal[i][k]; k += 1) {
+                vetorAux[j] = *(estruturaPrincipal[i][k]);
+                j += 1;
+            }
+        }
+    }
+    return j > 0 ? SUCESSO : TODAS_ESTRUTURAS_AUXILIARES_VAZIAS;
 }
-
 
 /*
-Objetivo: retorna os nÃºmeros ordenados de todas as estruturas auxiliares.
-os nÃºmeros devem ser armazenados em vetorAux
-
+Objetivo: retorna os números ordenados de todas as estruturas auxiliares.
+os números devem ser armazenados em vetorAux
 Rertono (int)
-    SUCESSO - recuperado com sucesso os valores da estrutura na posiÃ§Ã£o 'posicao'
-    SEM_ESTRUTURA_AUXILIAR - NÃ£o tem estrutura auxiliar
+    SUCESSO - recuperado com sucesso os valores da estrutura na posição 'posicao'
+    TODAS_ESTRUTURAS_AUXILIARES_VAZIAS - Não tem estrutura auxiliar
 */
 int getDadosOrdenadosDeTodasEstruturasAuxiliares(int vetorAux[]){
-
 }
+
 
 
 /*

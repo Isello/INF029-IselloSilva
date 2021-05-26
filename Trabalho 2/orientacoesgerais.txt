@@ -1,0 +1,27 @@
+- baixar o código
+- renomear os arquivos 
+	PrimeiroUltimoNomeMatricula.c e 
+	PrimeiroUltimoNomeMatricula.h para
+	seus dados
+- compilar 
+
+gcc meuTeste.c EstruturaVetores.c -o T2
+
+
+cd /d E:\Faculdade\IFBA\2º Semestre\INF029 - Laboratório de Programação\Trabalho 2\Meu
+
+
+gcc Q2.c -o Q2
+
+
+	lembrar de substituir o comando acima pelo novo nome
+- rodar
+	- ./T1
+
+
+gcc mainTeste.c EstruturaVetores.c -o T2
+
+
+cd /d E:\Faculdade\IFBA\2º Semestre\INF029 - Laboratório de Programação\Trabalho 2\testado
+
+gcc mainTeste.c EstruturaVetores.c -o T2
