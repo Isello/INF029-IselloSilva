@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define TAM 10
+////////
 
 #include "EstruturaVetores.h"
 
@@ -305,11 +306,11 @@ int getDadosDeTodasEstruturasAuxiliares(int vetorAux[])
 }
 
 /*
-Objetivo: retorna os números ordenados de todas as estruturas auxiliares.
-os números devem ser armazenados em vetorAux
+Objetivo: retorna os nï¿½meros ordenados de todas as estruturas auxiliares.
+os nï¿½meros devem ser armazenados em vetorAux
 Rertono (int)
-    SUCESSO - recuperado com sucesso os valores da estrutura na posição 'posicao'
-    TODAS_ESTRUTURAS_AUXILIARES_VAZIAS - Não tem estrutura auxiliar
+    SUCESSO - recuperado com sucesso os valores da estrutura na posiï¿½ï¿½o 'posicao'
+    TODAS_ESTRUTURAS_AUXILIARES_VAZIAS - Nï¿½o tem estrutura auxiliar
 */
 int getDadosOrdenadosDeTodasEstruturasAuxiliares(int vetorAux[]){
 }
