@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+
 // 1) Fa�a uma fun��o recursiva que calcule e retorne o fatorial de um n�mero inteiro N
 
 double fatorial(int n) {
