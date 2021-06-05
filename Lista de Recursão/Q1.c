@@ -1,8 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
-// 1) Faça uma função recursiva que calcule e retorne o fatorial de um número inteiro N
+// 1) Faï¿½a uma funï¿½ï¿½o recursiva que calcule e retorne o fatorial de um nï¿½mero inteiro N
 
 double fatorial(int n) {
     if (n <= 1)
