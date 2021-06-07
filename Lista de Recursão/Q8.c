@@ -3,16 +3,32 @@
 #include <locale.h>
 
 /* 
-8) O máximo divisor comum dos inteiros x e y é o maior inteiro que é divisível por x e y. 
-Escreva uma função recursiva mdc em C, que retorna o máximo divisor comum de x e y. 
-O mdc de x e y é definido como segue: se y é igual a 0, então mdc(x,y) é x; caso
-contrário, mdc(x,y) é mdc (y, x%y), onde % é o operador resto.
+8) O mï¿½ximo divisor comum dos inteiros x e y ï¿½ o maior inteiro que ï¿½ divisï¿½vel por x e y. 
+Escreva uma funï¿½ï¿½o recursiva mdc em C, que retorna o mï¿½ximo divisor comum de x e y. 
+O mdc de x e y ï¿½ definido como segue: se y ï¿½ igual a 0, entï¿½o mdc(x,y) ï¿½ x; caso
+contrï¿½rio, mdc(x,y) ï¿½ mdc (y, x%y), onde % ï¿½ o operador resto.
 */
+int MDC (int x, int y){
+	
+	if (x % y != 0)
+	return MDC(y, x % y);
+	else
+	return y;
+}
 
 int main (){
 
 	setlocale(LC_ALL, "Portuguese");
 	
+	int x, y;
+	
+	printf("Digite X: ");
+	scanf("%d", &x);
+	printf("Digite Y: ");
+	scanf("%d", &y);
+	
+	int mdc = MDC(x, y);
+	printf ("\nMDC de %d e %d ï¿½ igual a: %d \n",x, y, mdc);
 	
 	getch();
 	return 0;
